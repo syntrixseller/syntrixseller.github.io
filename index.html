@@ -3,10 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Website</title>
+  <title>Your Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is hosted on GitHub Pages.</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">YourName</h1>
+      <nav>
+        <a href="#about" class="px-3 hover:text-blue-600">About</a>
+        <a href="#projects" class="px-3 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="px-3 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+    <p class="text-xl max-w-xl mx-auto">I build clean, modern, and professional web projects. Explore my portfolio below.</p>
+    <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-200 transition">View Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+    <p class="max-w-2xl mx-auto text-center text-gray-700">
+      I am a software developer with a passion for creating clean, user-friendly web applications. I love learning new technologies and building tools that solve real problems.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-50 py-16 px-4">
+    <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Project Card -->
+      <div class="bg-white shadow rounded overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Project One</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project goes here. Highlight features or tech used.</p>
+          <a href="#" class="text-blue-600 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Repeat Project Cards -->
+      <div class="bg-white shadow rounded overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Project Two</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project goes here. Highlight features or tech used.</p>
+          <a href="#" class="text-blue-600 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow rounded overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Project Three</h3>
+          <p class="text-gray-600 mb-4">A brief description of your project goes here. Highlight features or tech used.</p>
+          <a href="#" class="text-blue-600 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+    <p class="text-center text-gray-700 mb-6">Feel free to reach out for collaborations, projects, or just a chat!</p>
+    <form class="max-w-xl mx-auto bg-white p-6 shadow rounded space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-2 rounded">
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-2 rounded">
+      <textarea placeholder="Your Message" class="w-full border border-gray-300 p-2 rounded"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    &copy; 2025 YourName. All rights reserved.
+  </footer>
+
 </body>
 </html>
